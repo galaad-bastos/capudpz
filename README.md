@@ -1,2 +1,0 @@
-# capudpz
-capudpz website
