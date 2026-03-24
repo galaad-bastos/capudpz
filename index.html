@@ -5,26 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capucine Desprez | Coaching Matrescence</title>
     <meta name="description" content="Coach certifiée ICF spécialisée en accompagnement à la matrescence. J'accompagne les mamans à se (re)connecter à leur identité après l'arrivée d'un enfant.">
+    <meta name="keywords" content="coach matrescence, accompagnement postpartum, coaching maman, identité maternelle, développement personnel">
+    <meta name="author" content="Capucine Desprez">
+    <meta property="og:title" content="Capucine Desprez | Coaching Matrescence">
+    <meta property="og:description" content="Coach certifiée ICF spécialisée en accompagnement à la matrescence. J'accompagne les mamans à se (re)connecter à leur identité après l'arrivée d'un enfant.">
+    <meta property="og:image" content="https://capucinedesprez.com/images/og-image.jpg">
+    <meta property="og:url" content="https://capucinedesprez.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Capucine Desprez | Coaching Matrescence">
+    <meta name="twitter:description" content="Coach certifiée ICF spécialisée en accompagnement à la matrescence.">
+    <meta name="twitter:image" content="https://capucinedesprez.com/images/og-image.jpg">
+    <link rel="canonical" href="https://capucinedesprez.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Capucine Desprez - Coaching Matrescence",
+      "description": "Coach certifiée ICF spécialisée en accompagnement à la matrescence. J'accompagne les mamans à se (re)connecter à leur identité après l'arrivée d'un enfant.",
+      "url": "https://capucinedesprez.com",
+      "telephone": "+33-6-XX-XX-XX-XX",
+      "email": "contact@capucinedesprez.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "FR"
+      },
+      "serviceType": "Coaching Matrescence",
+      "areaServed": "France",
+      "priceRange": "€€"
+    }
+    </script>
     <style>
         :root {
-            --sage-50: #f7f9f7;
-            --sage-100: #e8f0e8;
-            --sage-200: #d4e4d4;
-            --sage-300: #b8d4b8;
-            --sage-400: #8fb98f;
-            --sage-500: #6b9d6b;
-            --sage-600: #527d52;
-            --sage-700: #3d5e3d;
-            --sage-800: #2c442c;
-            --sage-900: #1e2f1e;
+            --primary: #b2ac88;
+            --secondary: #636b2f;
+            --tertiary: #cb997e;
+            --accent: #872b2f;
             --cream: #fdfdf9;
             --warm-white: #faf9f6;
+            --light-bg: #f7f9f7;
             --text-dark: #2c3e2c;
             --text-medium: #4a5d4a;
-            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition: all 0.3s ease;
         }
 
         * {
@@ -35,35 +60,26 @@
 
         body {
             font-family: 'Quattrocento', serif;
-            background: var(--warm-white);
+            background: var(--cream);
             color: var(--text-dark);
-            line-height: 1.8;
-            overflow-x: hidden;
+            line-height: 1.7;
         }
 
-        /* Navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* NAVIGATION */
         nav {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(250, 249, 246, 0.95);
-            backdrop-filter: blur(12px);
+            background: rgba(253, 253, 249, 0.98);
+            backdrop-filter: blur(8px);
             z-index: 1000;
-            padding: 1.5rem 0;
-            border-bottom: 1px solid var(--sage-200);
-            animation: slideDown 0.6s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+            padding: 1.2rem 0;
+            border-bottom: 1px solid rgba(178, 172, 136, 0.2);
         }
 
         nav .container {
@@ -77,68 +93,58 @@
 
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--sage-700);
-            letter-spacing: 1px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: var(--secondary);
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 3rem;
         }
 
         nav a {
-            color: var(--text-medium);
+            color: var(--text-dark);
             text-decoration: none;
             font-size: 0.95rem;
-            transition: var(--transition);
+            letter-spacing: 0.3px;
+            transition: color var(--transition);
             position: relative;
         }
 
         nav a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -4px;
             left: 0;
             width: 0;
-            height: 2px;
-            background: var(--sage-500);
-            transition: var(--transition);
+            height: 1px;
+            background: var(--secondary);
+            transition: width var(--transition);
         }
 
         nav a:hover {
-            color: var(--sage-700);
+            color: var(--secondary);
         }
 
         nav a:hover::after {
             width: 100%;
         }
 
-        /* Mobile Menu Button */
         .menu-toggle {
             display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 0.5rem;
         }
 
-        .menu-toggle span {
-            width: 25px;
-            height: 2px;
-            background: var(--sage-700);
-            transition: var(--transition);
-        }
-
-        /* Hero Section */
+        /* HERO */
         .hero {
-            margin-top: 80px;
-            min-height: 90vh;
+            margin-top: 70px;
+            min-height: calc(100vh - 70px);
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, var(--sage-50) 0%, var(--cream) 100%);
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(178, 172, 136, 0.05) 0%, rgba(253, 253, 249, 0) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -146,27 +152,20 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, var(--sage-100) 0%, transparent 70%);
-            opacity: 0.5;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(-30px, -30px) scale(1.1); }
+            top: -30%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(178, 172, 136, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
         }
 
         .hero .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 4rem 2rem;
             display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 4rem;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
             align-items: center;
             position: relative;
             z-index: 1;
@@ -174,330 +173,249 @@
 
         .hero-content h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-weight: 300;
-            color: var(--sage-800);
-            line-height: 1.2;
+            line-height: 1.3;
+            color: var(--text-dark);
             margin-bottom: 1.5rem;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
+            letter-spacing: -0.5px;
         }
 
         .hero-content h1 strong {
             font-weight: 600;
-            color: var(--sage-600);
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            color: var(--secondary);
         }
 
         .hero-content p {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             color: var(--text-medium);
             margin-bottom: 2.5rem;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
+            line-height: 1.8;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 3rem;
-            background: var(--sage-600);
+            padding: 1.1rem 2.8rem;
+            background: var(--secondary);
             color: white;
             text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(107, 157, 107, 0.2);
-            animation: fadeInUp 0.8s ease-out 0.6s both;
+            border-radius: 3px;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            transition: all var(--transition);
+            box-shadow: 0 4px 15px rgba(99, 107, 47, 0.15);
         }
 
         .cta-button:hover {
-            background: var(--sage-700);
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(107, 157, 107, 0.3);
-        }
-
-        .hero-image {
-            position: relative;
-            animation: fadeInUp 0.8s ease-out 0.8s both;
+            background: var(--tertiary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(203, 153, 126, 0.2);
         }
 
         .hero-image-placeholder {
             width: 100%;
-            aspect-ratio: 3/4;
-            background: linear-gradient(135deg, var(--sage-200) 0%, var(--sage-300) 100%);
-            border-radius: 20px;
+            aspect-ratio: 2/2.5;
+            background: linear-gradient(135deg, var(--primary) 0%, rgba(178, 172, 136, 0.5) 100%);
+            border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 20px 60px rgba(107, 157, 107, 0.15);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-image-placeholder::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(184, 212, 184, 0.4) 0%, transparent 50%);
+            box-shadow: 0 20px 40px rgba(99, 107, 47, 0.1);
         }
 
         .hero-image-placeholder svg {
-            width: 120px;
-            height: 120px;
-            opacity: 0.3;
+            width: 100px;
+            opacity: 0.2;
         }
 
-        /* Section Styling */
+        /* SECTIONS */
         section {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        section:nth-child(even) {
-            background: var(--sage-50);
-        }
-
         h2 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem;
-            font-weight: 600;
-            color: var(--sage-800);
-            margin-bottom: 1rem;
+            font-size: 2.8rem;
+            font-weight: 400;
+            color: var(--text-dark);
             text-align: center;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
         }
 
         .section-subtitle {
             text-align: center;
             color: var(--text-medium);
-            font-size: 1.2rem;
-            margin-bottom: 4rem;
-            max-width: 700px;
+            font-size: 1.05rem;
+            margin-bottom: 3.5rem;
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            letter-spacing: 0.2px;
         }
 
-        /* About Section */
+        /* ABOUT */
         .about-content {
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 4rem;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 3rem;
             align-items: center;
-        }
-
-        .about-image {
-            position: relative;
         }
 
         .about-image-placeholder {
             width: 100%;
             aspect-ratio: 1;
-            background: linear-gradient(135deg, var(--sage-300) 0%, var(--sage-400) 100%);
-            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 20px 60px rgba(107, 157, 107, 0.2);
+            box-shadow: 0 15px 35px rgba(99, 107, 47, 0.12);
         }
 
         .about-image-placeholder svg {
-            width: 100px;
-            height: 100px;
-            opacity: 0.4;
+            width: 80px;
+            opacity: 0.3;
         }
 
         .about-text h3 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
-            color: var(--sage-700);
+            font-size: 1.9rem;
+            color: var(--secondary);
             margin-bottom: 1.5rem;
+            font-weight: 400;
         }
 
         .about-text p {
             color: var(--text-medium);
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            line-height: 1.8;
         }
 
         .credentials {
             margin-top: 2rem;
             padding: 1.5rem;
-            background: var(--cream);
-            border-radius: 12px;
-            border-left: 4px solid var(--sage-500);
+            background: rgba(178, 172, 136, 0.08);
+            border-left: 2px solid var(--secondary);
+            border-radius: 2px;
         }
 
-        .credentials h4 {
-            color: var(--sage-700);
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
+        .credentials p {
+            font-size: 1.05rem;
+            color: var(--secondary);
+            font-weight: 500;
         }
 
-        .credentials ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .credentials li {
-            padding: 0.5rem 0;
-            color: var(--text-medium);
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .credentials li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--sage-500);
-            font-weight: bold;
-        }
-
-        /* Services Section */
+        /* SERVICES GRID */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2.5rem;
         }
 
         .service-card {
             background: white;
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(107, 157, 107, 0.08);
-            transition: var(--transition);
-            border-top: 4px solid var(--sage-300);
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(99, 107, 47, 0.06);
+            transition: all var(--transition);
+            border-left: 3px solid var(--primary);
         }
 
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 60px rgba(107, 157, 107, 0.15);
-            border-top-color: var(--sage-500);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(99, 107, 47, 0.1);
+            border-left-color: var(--secondary);
         }
 
         .service-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--sage-100);
+            width: 50px;
+            height: 50px;
+            background: rgba(178, 172, 136, 0.15);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         .service-icon svg {
-            width: 30px;
-            height: 30px;
-            color: var(--sage-600);
+            width: 26px;
+            color: var(--secondary);
         }
 
         .service-card h3 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            color: var(--sage-800);
-            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+        }
+
+        .service-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            font-weight: 400;
         }
 
         .service-card p {
+            font-size: 0.98rem;
             color: var(--text-medium);
-            line-height: 1.8;
-            margin-bottom: 1rem;
-        }
-
-        .service-details {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 1.5rem;
+            line-height: 1.7;
         }
 
         .service-tag {
-            padding: 0.4rem 1rem;
-            background: var(--sage-100);
-            color: var(--sage-700);
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: rgba(178, 172, 136, 0.2);
+            color: var(--secondary);
             border-radius: 20px;
             font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
         }
 
-        /* Testimonials */
+        /* TESTIMONIALS */
         .testimonials-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2.5rem;
         }
 
         .testimonial {
             background: white;
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(107, 157, 107, 0.08);
-            position: relative;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(99, 107, 47, 0.06);
+            border-top: 3px solid var(--tertiary);
+            transition: all var(--transition);
         }
 
-        .testimonial::before {
-            content: '"';
-            position: absolute;
-            top: 1rem;
-            left: 1.5rem;
-            font-size: 5rem;
-            color: var(--sage-200);
-            font-family: 'Cormorant Garamond', serif;
-            line-height: 1;
+        .testimonial:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(99, 107, 47, 0.08);
         }
 
         .testimonial-text {
             color: var(--text-medium);
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            position: relative;
-            z-index: 1;
+            font-size: 0.98rem;
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
         }
 
-        .testimonial-author {
-            color: var(--sage-700);
-            font-weight: bold;
+        .testimonial-text strong {
+            color: var(--secondary);
+            font-weight: 600;
         }
 
-        .testimonial-result {
-            color: var(--text-medium);
-            font-size: 0.95rem;
-            margin-top: 0.5rem;
-        }
-
-        /* Contact Section - Simplified */
-        .contact-info {
-            max-width: 100%;
-        }
-
-        .contact-info h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
-            color: var(--sage-800);
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-info p {
-            color: var(--text-medium);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
+        /* CONTACT */
         .contact-details {
             display: flex;
             flex-direction: column;
@@ -506,23 +424,24 @@
 
         .contact-item {
             display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: var(--sage-50);
-            border-radius: 12px;
-            transition: var(--transition);
+            gap: 1.5rem;
+            padding: 1.2rem;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid var(--primary);
+            transition: all var(--transition);
         }
 
         .contact-item:hover {
-            background: var(--sage-100);
-            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(99, 107, 47, 0.08);
+            border-left-color: var(--secondary);
+            transform: translateX(3px);
         }
 
         .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--sage-600);
+            width: 45px;
+            height: 45px;
+            background: var(--secondary);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -531,122 +450,129 @@
         }
 
         .contact-icon svg {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             color: white;
         }
 
-        .contact-item-text {
-            flex: 1;
-        }
-
         .contact-item-label {
-            font-size: 0.9rem;
-            color: var(--sage-600);
-            margin-bottom: 0.3rem;
+            font-size: 0.85rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2rem;
+            font-weight: 600;
         }
 
         .contact-item-value {
             color: var(--text-dark);
-            font-weight: bold;
+            font-size: 1rem;
         }
 
         .contact-item-value a {
             color: var(--text-dark);
             text-decoration: none;
-            transition: var(--transition);
+            transition: color var(--transition);
         }
 
         .contact-item-value a:hover {
-            color: var(--sage-600);
+            color: var(--secondary);
         }
 
-        /* Footer */
+        /* FOOTER */
         footer {
-            background: var(--sage-900);
-            color: var(--sage-200);
-            padding: 3rem 2rem 2rem;
-            text-align: center;
+            background: white;
+            color: var(--text-dark);
+            padding: 3.5rem 2rem 2rem;
+            border-top: 1px solid rgba(178, 172, 136, 0.15);
+            margin-top: 4rem;
         }
 
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
+            text-align: center;
         }
 
         .footer-nav {
             display: flex;
             justify-content: center;
             gap: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             flex-wrap: wrap;
         }
 
         .footer-nav a {
-            color: var(--sage-200);
+            color: var(--secondary);
             text-decoration: none;
-            transition: var(--transition);
+            font-size: 0.9rem;
+            transition: color var(--transition);
+            letter-spacing: 0.2px;
         }
 
         .footer-nav a:hover {
-            color: var(--sage-400);
+            color: var(--tertiary);
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin: 2rem 0;
+            gap: 1.2rem;
+            margin: 1.5rem 0;
         }
 
         .social-link {
-            width: 45px;
-            height: 45px;
-            background: var(--sage-800);
+            width: 40px;
+            height: 40px;
+            background: rgba(178, 172, 136, 0.15);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: var(--transition);
+            transition: all var(--transition);
             text-decoration: none;
         }
 
         .social-link:hover {
-            background: var(--sage-600);
-            transform: translateY(-3px);
+            background: var(--secondary);
         }
 
         .social-link svg {
-            width: 20px;
-            height: 20px;
-            color: var(--sage-200);
+            width: 18px;
+            height: 18px;
+            color: var(--secondary);
+            transition: color var(--transition);
+        }
+
+        .social-link:hover svg {
+            color: white;
         }
 
         .copyright {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--sage-800);
-            color: var(--sage-400);
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(178, 172, 136, 0.1);
+            color: var(--text-medium);
             font-size: 0.9rem;
+            letter-spacing: 0.2px;
         }
 
-        /* Scroll to top button */
         .scroll-top {
             position: fixed;
             bottom: 2rem;
             right: 2rem;
-            width: 50px;
-            height: 50px;
-            background: var(--sage-600);
+            width: 45px;
+            height: 45px;
+            background: var(--secondary);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: var(--transition);
+            transition: all var(--transition);
             opacity: 0;
             pointer-events: none;
-            box-shadow: 0 5px 20px rgba(107, 157, 107, 0.3);
+            box-shadow: 0 4px 12px rgba(99, 107, 47, 0.25);
         }
 
         .scroll-top.visible {
@@ -655,30 +581,109 @@
         }
 
         .scroll-top:hover {
-            background: var(--sage-700);
-            transform: translateY(-5px);
+            background: var(--tertiary);
+            transform: translateY(-2px);
         }
 
         .scroll-top svg {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             color: white;
         }
 
-        /* Responsive Design */
-        @media (max-width: 968px) {
+        /* DROPDOWN MENU */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 0.5rem);
+            left: 0;
+            background: white;
+            border: 1px solid rgba(178, 172, 136, 0.2);
+            border-radius: 4px;
+            min-width: 200px;
+            box-shadow: 0 8px 24px rgba(99, 107, 47, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 1001;
+        }
+
+        /* Hover zone to keep dropdown visible */
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 0.5rem;
+            pointer-events: auto;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .dropdown.active .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid rgba(178, 172, 136, 0.1);
+            font-size: 0.95rem;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(178, 172, 136, 0.08);
+            color: var(--secondary);
+            padding-left: 2rem;
+        }
+
+        /* FADE IN ANIMATION */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
             nav ul {
                 position: fixed;
-                top: 80px;
+                top: 70px;
                 left: 0;
                 right: 0;
-                background: var(--warm-white);
+                background: var(--cream);
                 flex-direction: column;
-                padding: 2rem;
-                gap: 1.5rem;
+                padding: 1.5rem 2rem;
+                gap: 1rem;
                 transform: translateX(-100%);
-                transition: var(--transition);
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                transition: transform var(--transition);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
             }
 
             nav ul.active {
@@ -687,10 +692,23 @@
 
             .menu-toggle {
                 display: flex;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                background: none;
+                border: none;
+                padding: 0.5rem;
+            }
+
+            .menu-toggle span {
+                width: 22px;
+                height: 2px;
+                background: var(--secondary);
+                transition: all var(--transition);
             }
 
             .menu-toggle.active span:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
+                transform: rotate(45deg) translate(4px, 4px);
             }
 
             .menu-toggle.active span:nth-child(2) {
@@ -698,38 +716,79 @@
             }
 
             .menu-toggle.active span:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -7px);
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+
+            /* Mobile dropdown */
+            .dropdown-menu {
+                position: static;
+                opacity: 0;
+                visibility: hidden;
+                transform: none;
+                max-height: 0;
+                overflow: hidden;
+                background: rgba(178, 172, 136, 0.05);
+                border: none;
+                box-shadow: none;
+                margin-top: 0;
+                transition: all 0.3s ease;
+            }
+
+            .dropdown.active .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                max-height: 500px;
+            }
+
+            .dropdown-toggle::after {
+                content: ' ▼';
+                font-size: 0.7rem;
+                color: var(--secondary);
+                transition: transform 0.3s ease;
+                display: inline-block;
+            }
+
+            .dropdown.active .dropdown-toggle::after {
+                transform: rotate(180deg);
+            }
+
+            /* Remove hover zone on mobile */
+            .dropdown::after {
+                display: none;
             }
 
             .hero .container {
                 grid-template-columns: 1fr;
-                text-align: center;
             }
 
             .hero-content h1 {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
             }
 
             .about-content {
                 grid-template-columns: 1fr;
             }
 
-            section {
-                padding: 4rem 1.5rem;
-            }
-
             h2 {
-                font-size: 2.5rem;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .hero-content h1 {
                 font-size: 2.2rem;
             }
 
+            section {
+                padding: 4rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
             .hero-content p {
-                font-size: 1.1rem;
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
             }
 
             .services-grid,
@@ -737,26 +796,13 @@
                 grid-template-columns: 1fr;
             }
 
-            h2 {
-                font-size: 2rem;
+            nav .container {
+                padding: 0 1.5rem;
             }
-        }
 
-        /* Smooth scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Fade-in animation on scroll */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+            .logo {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
@@ -773,7 +819,13 @@
             <ul id="navMenu">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#coaching-maman">Coaching pour maman</a></li>
+                <li class="dropdown">
+                    <a href="#coaching-maman" class="dropdown-toggle">Coaching pour maman</a>
+                    <div class="dropdown-menu">
+                        <a href="#savoir-plus" class="dropdown-item">En Savoir plus</a>
+                        <a href="#tarifs" class="dropdown-item">Tarifs</a>
+                    </div>
+                </li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -818,8 +870,8 @@
                 
                 <p>Mon expérience personnelle nourrit ma pratique quotidiennement. C'est parce que j'ai eu besoin d'aide pour répondre à ces deux questions que je me posais en tant que nouvelle maman :</p>
                 
-                <div class="credentials" style="background: var(--sage-100); border-left: 4px solid var(--sage-600);">
-                    <p style="font-style: italic; color: var(--sage-800); font-size: 1.1rem; line-height: 1.8;">
+                <div class="credentials" style="background: var(--cream); border-left: 4px solid var(--secondary);">
+                    <p style="font-style: italic; color: var(--text-dark); font-size: 1.1rem; line-height: 1.8;">
                         <strong>Quelle femme suis-je désormais / j'aspire à être ?</strong><br>
                         <strong>Quelle maman suis-je / j'aspire à être ?</strong>
                     </p>
@@ -827,7 +879,7 @@
                 
                 <p>C'est pour cette raison que je suis spécialisée en accompagnement à la matrescence depuis 2024.</p>
                 
-                <p style="text-align: center; margin-top: 2rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--sage-700); font-style: italic;">
+                <p style="text-align: center; margin-top: 2rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--secondary); font-style: italic;">
                     Accueillir la mère, honorer la femme
                 </p>
             </div>
@@ -840,12 +892,12 @@
         <p class="section-subtitle">Accompagnement à la matrescence</p>
         
         <!-- En savoir plus - Nested subsection -->
-        <div id="savoir-plus" style="margin-top: 3rem;">
-            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--sage-800); text-align: center; margin-bottom: 1rem;">En savoir plus</h3>
+        <div id="savoir-plus" style="margin-top: 3rem; scroll-margin-top: 90px;">
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--text-dark); text-align: center; margin-bottom: 1rem;">En savoir plus</h3>
             
             <!-- Les problèmes que tu rencontres -->
             <div style="margin-top: 4rem;">
-                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--sage-700); text-align: center; margin-bottom: 2rem;">Les problèmes que tu rencontres</h4>
+                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--secondary); text-align: center; margin-bottom: 2rem;">Les problèmes que tu rencontres</h4>
                 <div class="services-grid">
                     <div class="service-card">
                         <p>Tu es <strong>épuisée émotionnellement</strong></p>
@@ -873,7 +925,7 @@
 
             <!-- Ce que tu veux vraiment -->
             <div style="margin-top: 5rem;">
-                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--sage-700); text-align: center; margin-bottom: 2rem;">Ce que tu veux vraiment</h4>
+                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--secondary); text-align: center; margin-bottom: 2rem;">Ce que tu veux vraiment</h4>
                 <div class="testimonials-container">
                     <div class="testimonial">
                         <p class="testimonial-text">Partager la charge pour te sentir <strong>+ légère</strong> et respirer à nouveau</p>
@@ -895,7 +947,7 @@
 
             <!-- Le déroulement d'une séance -->
             <div style="margin-top: 5rem;">
-                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--sage-700); text-align: center; margin-bottom: 2rem;">Le déroulement d'une séance</h4>
+                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--secondary); text-align: center; margin-bottom: 2rem;">Le déroulement d'une séance</h4>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
@@ -904,7 +956,7 @@
                                 <path d="M12 16v-4M12 8h.01"/>
                             </svg>
                         </div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--sage-800); margin-bottom: 1rem;">1. Identifier les enjeux</h4>
+                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--text-dark); margin-bottom: 1rem;">1. Identifier les enjeux</h4>
                         <p>Quelle est la situation ? L'environnement, les problèmes, les enjeux, les priorités, les besoins.</p>
                     </div>
 
@@ -915,7 +967,7 @@
                                 <polyline points="22 4 12 14.01 9 11.01"/>
                             </svg>
                         </div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--sage-800); margin-bottom: 1rem;">2. Clarifier tes objectifs</h4>
+                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--text-dark); margin-bottom: 1rem;">2. Clarifier tes objectifs</h4>
                         <p>Élaborer une vision de toi-même à court et long terme et formuler tes aspirations et attentes.</p>
                     </div>
 
@@ -925,7 +977,7 @@
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                             </svg>
                         </div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--sage-800); margin-bottom: 1rem;">3. Explorer ton monde intérieur</h4>
+                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--text-dark); margin-bottom: 1rem;">3. Explorer ton monde intérieur</h4>
                         <p>Identifier tes valeurs, qualités, compétences mais aussi tes freins, tes blocages, ce qui te retient et t'empêche d'avancer.</p>
                     </div>
 
@@ -936,7 +988,7 @@
                                 <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
                             </svg>
                         </div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--sage-800); margin-bottom: 1rem;">4. Mettre en place des actions</h4>
+                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--text-dark); margin-bottom: 1rem;">4. Mettre en place des actions</h4>
                         <p>Actions concrètes et personnalisées en fonction de ton quotidien.</p>
                     </div>
                 </div>
@@ -944,45 +996,45 @@
         </div>
 
         <!-- Tarifs - Nested subsection -->
-        <div id="tarifs" style="margin-top: 5rem;">
-            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--sage-800); text-align: center; margin-bottom: 1rem;">Les tarifs</h3>
+        <div id="tarifs" style="margin-top: 5rem; scroll-margin-top: 90px;">>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--text-dark); text-align: center; margin-bottom: 1rem;">Les tarifs</h3>
             <p style="text-align: center; color: var(--text-medium); font-size: 1.1rem; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">Accompagnement de 3 mois</p>
             
             <div style="max-width: 800px; margin: 0 auto;">
-                <div class="service-card" style="border-top: 4px solid var(--sage-600); padding: 3rem;">
+                <div class="service-card" style="border-top: 4px solid var(--secondary); padding: 3rem;">
                     <div style="text-align: center; margin-bottom: 2rem;">
-                        <div class="service-icon" style="background: var(--sage-600); margin: 0 auto 1.5rem;">
+                        <div class="service-icon" style="background: var(--secondary); margin: 0 auto 1.5rem;">
                             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                             </svg>
                         </div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--sage-800); margin-bottom: 1rem;">Accompagnement de 3 mois</h4>
-                        <p style="font-size: 3rem; font-weight: bold; color: var(--sage-600); margin: 1.5rem 0;">500€</p>
+                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--text-dark); margin-bottom: 1rem;">Accompagnement de 3 mois</h4>
+                        <p style="font-size: 3rem; font-weight: bold; color: var(--secondary); margin: 1.5rem 0;">500€</p>
                     </div>
                     
                     <div style="text-align: left; max-width: 600px; margin: 0 auto;">
                         <ul style="list-style: none; padding: 0;">
                             <li style="padding: 0.8rem 0; color: var(--text-dark); position: relative; padding-left: 2rem; font-size: 1.1rem;">
-                                <span style="position: absolute; left: 0; color: var(--sage-600); font-weight: bold;">✓</span>
+                                <span style="position: absolute; left: 0; color: var(--secondary); font-weight: bold;">✓</span>
                                 <strong>6 séances de coaching individuel d'1h</strong> (toutes les deux semaines)
                             </li>
                             <li style="padding: 0.8rem 0; color: var(--text-dark); position: relative; padding-left: 2rem; font-size: 1.1rem;">
-                                <span style="position: absolute; left: 0; color: var(--sage-600); font-weight: bold;">✓</span>
+                                <span style="position: absolute; left: 0; color: var(--secondary); font-weight: bold;">✓</span>
                                 1 séance découverte et 1 séance bilan
                             </li>
                             <li style="padding: 0.8rem 0; color: var(--text-dark); position: relative; padding-left: 2rem; font-size: 1.1rem;">
-                                <span style="position: absolute; left: 0; color: var(--sage-600); font-weight: bold;">✓</span>
+                                <span style="position: absolute; left: 0; color: var(--secondary); font-weight: bold;">✓</span>
                                 100% en ligne
                             </li>
                             <li style="padding: 0.8rem 0; color: var(--text-dark); position: relative; padding-left: 2rem; font-size: 1.1rem;">
-                                <span style="position: absolute; left: 0; color: var(--sage-600); font-weight: bold;">✓</span>
+                                <span style="position: absolute; left: 0; color: var(--secondary); font-weight: bold;">✓</span>
                                 Activités d'introspection entre chaque séance
                             </li>
                         </ul>
                     </div>
                     
-                    <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--sage-200); text-align: center;">
-                        <p style="color: var(--sage-700); font-weight: bold; font-size: 1.1rem; margin-bottom: 0.5rem;">3 sessions dans l'année :</p>
+                    <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--light-bg); text-align: center;">
+                        <p style="color: var(--secondary); font-weight: bold; font-size: 1.1rem; margin-bottom: 0.5rem;">3 sessions dans l'année :</p>
                         <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
                             <span class="service-tag" style="font-size: 1rem;">Janvier - Mars</span>
                             <span class="service-tag" style="font-size: 1rem;">Mai - Juillet</span>
@@ -1076,8 +1128,8 @@
             <div class="copyright">
                 <p>&copy; 2026 Capucine Desprez - Coach Matrescence. Tous droits réservés.</p>
                 <p style="margin-top: 0.5rem;">
-                    <a href="#" style="color: var(--sage-400); text-decoration: none;">Mentions légales</a> | 
-                    <a href="#" style="color: var(--sage-400); text-decoration: none; margin-left: 1rem;">Politique de confidentialité</a>
+                    <a href="mentions-legales.html" style="color: var(--tertiary); text-decoration: none;">Mentions légales</a> | 
+                    <a href="politique-confidentialite.html" style="color: var(--tertiary); text-decoration: none; margin-left: 1rem;">Politique de confidentialité</a>
                 </p>
             </div>
         </div>
@@ -1094,18 +1146,47 @@
         // Mobile Menu Toggle
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
 
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when clicking a link
-        navMenu.querySelectorAll('a').forEach(link => {
+        // Dropdown menu on mobile and desktop click
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', (e) => {
+                const isMobile = window.getComputedStyle(menuToggle).display !== 'none';
+                
+                if (isMobile) {
+                    // On mobile: toggle dropdown
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                } else {
+                    // On desktop: prevent navigation, just toggle dropdown
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        }
+
+        // Close menu when clicking a link (except dropdown toggle)
+        navMenu.querySelectorAll('a:not(.dropdown-toggle)').forEach(link => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
                 navMenu.classList.remove('active');
+                if (dropdown) {
+                    dropdown.classList.remove('active');
+                }
             });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (dropdown && !dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
         });
 
         // Scroll to Top Button
@@ -1146,12 +1227,14 @@
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                const target = document.querySelector(href);
+                
                 if (target) {
-                    const offsetTop = target.offsetTop - 80;
+                    e.preventDefault();
+                    const target_position = target.getBoundingClientRect().top + window.scrollY - 90;
                     window.scrollTo({
-                        top: offsetTop,
+                        top: target_position,
                         behavior: 'smooth'
                     });
                 }
