@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://capucinedesprez.com/sitemap.xml

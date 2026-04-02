@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions legales | Capucine Desprez</title>
+    <meta name="description" content="Mentions legales du site brochure statique de Capucine Desprez.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #b2ac88;
+            --secondary: #636b2f;
+            --tertiary: #cb997e;
+            --cream: #fdfdf9;
+            --text-dark: #263028;
+            --text-medium: #586458;
+            --border: rgba(99, 107, 47, 0.12);
+            --shadow: 0 24px 60px rgba(38, 48, 40, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-dark);
+            background:
+                radial-gradient(circle at top left, rgba(178, 172, 136, 0.18), transparent 24%),
+                linear-gradient(180deg, #f8f6f1 0%, #fdfdf9 100%);
+        }
+
+        .container {
+            width: min(calc(100% - 2rem), 960px);
+            margin: 0 auto;
+        }
+
+        .page-header {
+            padding: 3rem 0 2rem;
+        }
+
+        .brand {
+            color: var(--secondary);
+            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+        }
+
+        .hero {
+            padding: 0 0 2rem;
+        }
+
+        .hero h1 {
+            margin: 1rem 0 0.75rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.8rem, 6vw, 4.4rem);
+            line-height: 0.95;
+        }
+
+        .hero p {
+            max-width: 44rem;
+            color: var(--text-medium);
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .content {
+            padding-bottom: 4rem;
+        }
+
+        .panel {
+            padding: 2rem;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .section + .section {
+            margin-top: 2rem;
+        }
+
+        .section h2 {
+            margin: 0 0 0.9rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .section p {
+            margin: 0 0 0.9rem;
+            color: var(--text-medium);
+            line-height: 1.8;
+        }
+
+        .notice {
+            padding: 1rem 1.1rem;
+            border-radius: 18px;
+            background: rgba(203, 153, 126, 0.16);
+            color: var(--text-dark);
+        }
+
+        .actions {
+            padding: 2rem 0 3rem;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            padding: 0 1.25rem;
+            border-radius: 999px;
+            background: var(--secondary);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <a class="brand" href="index.html">Capucine Desprez</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Mentions legales</h1>
+                <p>Cette page rassemble les informations legales liees au site brochure statique de Capucine Desprez. Les coordonnees professionnelles definitives seront integrees des leur validation.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="panel">
+                    <div class="section">
+                        <h2>Editeur du site</h2>
+                        <p>Capucine Desprez</p>
+                        <p>Activite : coaching en matrescence</p>
+                        <div class="notice">
+                            Les coordonnees professionnelles completes de l'editeur, incluant adresse de correspondance, email et numero de telephone, seront ajoutees avant publication definitive du site.
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Hebergement</h2>
+                        <p>Le site est heberge par O2Switch.</p>
+                        <p>O2Switch, 222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France.</p>
+                        <p>Site : https://www.o2switch.fr</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Propriete intellectuelle</h2>
+                        <p>Les contenus, textes, elements graphiques et compositions presentes sur ce site sont reserves. Toute reproduction, representation, adaptation ou exploitation, totale ou partielle, sans autorisation prealable ecrite, est interdite.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Responsabilite</h2>
+                        <p>Les informations presentees sur ce site ont une vocation informative. Elles peuvent etre modifiees a tout moment sans preavis. L'editeur ne saurait etre tenu responsable d'une interpretation inexacte ou d'une utilisation inadaptee des contenus.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Droit applicable</h2>
+                        <p>Le present site est soumis au droit francais. En cas de litige, et sauf disposition legale imperative contraire, les juridictions francaises seront seules competentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="actions">
+        <div class="container">
+            <a class="button" href="index.html">Retour au site</a>
+        </div>
+    </div>
+</body>
+</html>

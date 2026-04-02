@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capucine Desprez | Coaching à la matrescence</title>
+    <meta name="description" content="Capucine Desprez accompagne les mamans qui vivent une perte de repères après l'arrivée d'un enfant à se (re)connecter à leur identité profonde et à créer une maternité qui leur correspond.">
+    <meta name="author" content="Capucine Desprez">
+    <meta property="og:title" content="Capucine Desprez | Coaching à la matrescence">
+    <meta property="og:description" content="Capucine Desprez accompagne les mamans qui vivent une perte de repères après l'arrivée d'un enfant à se (re)connecter à leur identité profonde.">
+    <meta property="og:url" content="https://capucinedesprez.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Capucine Desprez | Coaching à la matrescence">
+    <meta name="twitter:description" content="Capucine Desprez accompagne les mamans qui vivent une perte de repères après l'arrivée d'un enfant à se (re)connecter à leur identité profonde.">
+    <link rel="canonical" href="https://capucinedesprez.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Capucine Desprez",
+    "description": "Coaching à la matrescence pour les mamans qui vivent une perte de repères après l'arrivée d'un enfant et souhaitent se reconnecter à leur identité profonde.",
+      "url": "https://capucinedesprez.com",
+    "serviceType": "Coaching à la matrescence",
+      "areaServed": "France",
+      "priceRange": "EUR"
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #b2ac88;
+            --primary-deep: #9d966f;
+            --secondary: #636b2f;
+            --secondary-deep: #4f5723;
+            --tertiary: #cb997e;
+            --accent: #872b2f;
+            --cream: #fdfdf9;
+            --warm-white: #faf9f6;
+            --light-bg: #f2f1ea;
+            --surface: rgba(255, 255, 255, 0.78);
+            --surface-strong: #ffffff;
+            --border: rgba(99, 107, 47, 0.14);
+            --text-dark: #263028;
+            --text-medium: #586458;
+            --text-soft: #7a8277;
+            --shadow-soft: 0 24px 60px rgba(38, 48, 40, 0.08);
+            --shadow-card: 0 18px 36px rgba(38, 48, 40, 0.06);
+            --radius-xl: 32px;
+            --radius-lg: 24px;
+            --radius-md: 18px;
+            --radius-sm: 12px;
+            --container: 1180px;
+            --transition: 220ms ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-dark);
+            background:
+                radial-gradient(circle at top left, rgba(178, 172, 136, 0.20), transparent 28%),
+                radial-gradient(circle at 88% 14%, rgba(203, 153, 126, 0.16), transparent 20%),
+                linear-gradient(180deg, #f8f6f1 0%, #fcfbf7 24%, #fdfdf9 100%);
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 1rem;
+            top: -3rem;
+            padding: 0.8rem 1rem;
+            border-radius: 999px;
+            background: var(--secondary);
+            color: #fff;
+            z-index: 2000;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+        }
+
+        .page-shell {
+            overflow: clip;
+        }
+
+        .container {
+            width: min(calc(100% - 2rem), var(--container));
+            margin: 0 auto;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(18px);
+            background: rgba(250, 249, 246, 0.76);
+            border-bottom: 1px solid rgba(99, 107, 47, 0.08);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 84px;
+            gap: 1.5rem;
+        }
+
+        .brand {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 0.15rem;
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            line-height: 0.95;
+            letter-spacing: 0.02em;
+            color: var(--secondary);
+        }
+
+        .brand-tag {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--text-soft);
+        }
+
+        .nav-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border: 1px solid rgba(99, 107, 47, 0.16);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        .nav-toggle svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            transition: color var(--transition);
+        }
+
+        .main-nav a:hover,
+        .main-nav a:focus-visible,
+        .main-nav a.is-active {
+            color: var(--secondary);
+        }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0 1.25rem;
+            border-radius: 999px;
+            background: var(--secondary);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 14px 26px rgba(99, 107, 47, 0.18);
+            transition: transform var(--transition), background var(--transition), box-shadow var(--transition);
+        }
+
+        .header-cta:hover,
+        .header-cta:focus-visible {
+            background: var(--secondary-deep);
+            transform: translateY(-1px);
+            box-shadow: 0 18px 32px rgba(99, 107, 47, 0.22);
+        }
+
+        main {
+            display: block;
+        }
+
+        .hero {
+            padding: 5rem 0 2.5rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .hero-copy,
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-copy {
+            padding: 1rem 0 0;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.55rem 0.95rem;
+            border: 1px solid rgba(99, 107, 47, 0.14);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.65);
+            color: var(--secondary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 0.55rem;
+            height: 0.55rem;
+            border-radius: 50%;
+            background: var(--tertiary);
+            box-shadow: 0 0 0 6px rgba(203, 153, 126, 0.14);
+        }
+
+        .hero h1 {
+            margin: 1.35rem 0 1rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.3rem, 6vw, 6rem);
+            line-height: 0.96;
+            letter-spacing: -0.04em;
+            max-width: 12ch;
+        }
+
+        .hero h1 span {
+            display: block;
+            color: var(--secondary);
+        }
+
+        .hero-lead {
+            max-width: 58ch;
+            margin: 0;
+            color: var(--text-medium);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 54px;
+            padding: 0 1.4rem;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform var(--transition), background var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
+        }
+
+        .button-primary {
+            background: var(--secondary);
+            color: #fff;
+            box-shadow: 0 18px 34px rgba(99, 107, 47, 0.18);
+        }
+
+        .button-primary:hover,
+        .button-primary:focus-visible {
+            transform: translateY(-2px);
+            background: var(--secondary-deep);
+        }
+
+        .button-secondary {
+            background: rgba(255, 255, 255, 0.72);
+            color: var(--text-dark);
+            border-color: rgba(99, 107, 47, 0.16);
+        }
+
+        .button-secondary:hover,
+        .button-secondary:focus-visible {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.96);
+            border-color: rgba(99, 107, 47, 0.28);
+        }
+
+        .hero-note {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 2.4rem;
+        }
+
+        .note-card {
+            padding: 1.2rem;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(99, 107, 47, 0.08);
+            box-shadow: var(--shadow-card);
+        }
+
+        .note-card strong {
+            display: block;
+            margin-bottom: 0.45rem;
+            font-size: 0.95rem;
+            color: var(--secondary);
+        }
+
+        .note-card p {
+            margin: 0;
+            color: var(--text-medium);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .hero-visual {
+            min-height: 640px;
+        }
+
+        .hero-art {
+            position: relative;
+            height: 100%;
+            padding: 1.2rem;
+            border-radius: calc(var(--radius-xl) + 8px);
+            background:
+                linear-gradient(150deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.72)),
+                linear-gradient(135deg, rgba(178, 172, 136, 0.26), rgba(203, 153, 126, 0.18));
+            border: 1px solid rgba(99, 107, 47, 0.12);
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+        }
+
+        .hero-art::before,
+        .hero-art::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(10px);
+        }
+
+        .hero-art::before {
+            inset: auto auto 12% -8%;
+            width: 220px;
+            height: 220px;
+            background: rgba(178, 172, 136, 0.24);
+        }
+
+        .hero-art::after {
+            inset: 6% -6% auto auto;
+            width: 200px;
+            height: 200px;
+            background: rgba(203, 153, 126, 0.2);
+        }
+
+        .art-frame {
+            position: relative;
+            height: 100%;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            background:
+                linear-gradient(180deg, rgba(99, 107, 47, 0.07), rgba(99, 107, 47, 0.03)),
+                linear-gradient(145deg, rgba(253, 253, 249, 0.96), rgba(248, 245, 238, 0.88));
+        }
+
+        .art-column {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            grid-template-rows: 1.05fr auto auto;
+            padding: 2rem;
+        }
+
+        .art-pill {
+            align-self: start;
+            justify-self: start;
+            padding: 0.7rem 1rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(99, 107, 47, 0.1);
+            color: var(--text-medium);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .art-copy {
+            align-self: center;
+            max-width: 26rem;
+        }
+
+        .art-copy p {
+            margin: 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.05;
+            color: var(--text-dark);
+        }
+
+        .art-copy p span {
+            color: var(--accent);
+        }
+
+        .art-cards {
+            display: grid;
+            gap: 1rem;
+            align-self: end;
+        }
+
+        .floating-card {
+            width: min(100%, 18rem);
+            padding: 1.1rem 1.15rem;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(99, 107, 47, 0.12);
+            box-shadow: 0 16px 28px rgba(38, 48, 40, 0.08);
+        }
+
+        .floating-card:nth-child(2) {
+            justify-self: end;
+            background: rgba(248, 244, 236, 0.92);
+        }
+
+        .floating-card strong {
+            display: block;
+            margin-bottom: 0.45rem;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        .floating-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-medium);
+        }
+
+        .trust-band {
+            padding: 1rem 0 0;
+        }
+
+        .trust-strip {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: var(--radius-lg);
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(99, 107, 47, 0.08);
+            box-shadow: var(--shadow-card);
+        }
+
+        .trust-item {
+            padding: 1rem 1.15rem;
+            border-radius: var(--radius-md);
+            background: rgba(250, 249, 246, 0.9);
+        }
+
+        .trust-item strong {
+            display: block;
+            margin-bottom: 0.45rem;
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+
+        .trust-item p {
+            margin: 0;
+            color: var(--text-medium);
+            font-size: 0.94rem;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 6.5rem 0;
+        }
+
+        .section-intro {
+            max-width: 43rem;
+            margin-bottom: 2.8rem;
+        }
+
+        .section-kicker {
+            margin: 0 0 0.7rem;
+            color: var(--secondary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .section-intro h2 {
+            margin: 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.5rem, 4.8vw, 4rem);
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .section-intro p {
+            margin: 1rem 0 0;
+            color: var(--text-medium);
+            line-height: 1.85;
+            font-size: 1.03rem;
+        }
+
+        .story-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .story-panel,
+        .story-aside,
+        .offer-panel,
+        .quote-block,
+        .contact-panel,
+        .faq-panel {
+            border-radius: var(--radius-xl);
+            background: rgba(255, 255, 255, 0.76);
+            border: 1px solid rgba(99, 107, 47, 0.1);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .story-panel {
+            padding: 2rem;
+        }
+
+        .story-panel p {
+            margin: 0 0 1.2rem;
+            color: var(--text-medium);
+            line-height: 1.85;
+        }
+
+        .story-panel p:last-child {
+            margin-bottom: 0;
+        }
+
+        .story-aside {
+            padding: 2rem;
+            background:
+                linear-gradient(180deg, rgba(99, 107, 47, 0.08), rgba(255, 255, 255, 0.9)),
+                rgba(255, 255, 255, 0.76);
+        }
+
+        .story-aside h3,
+        .offer-copy h3,
+        .faq-panel h3,
+        .contact-copy h3,
+        .offer-panel h3 {
+            margin: 0 0 1rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            line-height: 1.05;
+        }
+
+        .quote-block {
+            padding: 2rem;
+            background:
+                linear-gradient(145deg, rgba(250, 249, 246, 0.98), rgba(255, 255, 255, 0.88));
+        }
+
+        .quote-block p {
+            margin: 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1;
+            color: var(--secondary);
+        }
+
+        .list-clean {
+            list-style: none;
+            margin: 1.4rem 0 0;
+            padding: 0;
+            display: grid;
+            gap: 0.9rem;
+        }
+
+        .list-clean li {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.85rem;
+            align-items: start;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        .list-clean li::before {
+            content: '';
+            width: 0.72rem;
+            height: 0.72rem;
+            margin-top: 0.48rem;
+            border-radius: 50%;
+            background: var(--tertiary);
+            box-shadow: 0 0 0 6px rgba(203, 153, 126, 0.16);
+        }
+
+        .terrain-grid,
+        .steps-grid,
+        .values-grid {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .terrain-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .terrain-card,
+        .step-card,
+        .value-card {
+            padding: 1.7rem;
+            border-radius: var(--radius-lg);
+            background: rgba(255, 255, 255, 0.76);
+            border: 1px solid rgba(99, 107, 47, 0.1);
+            box-shadow: var(--shadow-card);
+        }
+
+        .terrain-card strong,
+        .value-card strong {
+            display: block;
+            margin-bottom: 0.75rem;
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+
+        .terrain-card p,
+        .step-card p,
+        .value-card p,
+        .story-aside p,
+        .offer-copy p,
+        .contact-copy p {
+            margin: 0;
+            color: var(--text-medium);
+            line-height: 1.75;
+        }
+
+        .offer-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .offer-panel {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 244, 236, 0.86));
+        }
+
+        .offer-price {
+            margin: 1.5rem 0 0;
+            padding: 1.4rem;
+            border-radius: var(--radius-lg);
+            background: rgba(99, 107, 47, 0.92);
+            color: #fff;
+        }
+
+        .offer-price span {
+            display: block;
+            font-size: 0.85rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .offer-price strong {
+            display: block;
+            margin-top: 0.35rem;
+            font-size: clamp(2.8rem, 4vw, 3.8rem);
+            line-height: 1;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
+
+        .offer-note {
+            margin-top: 1rem;
+            color: rgba(255, 255, 255, 0.82);
+            line-height: 1.6;
+            font-size: 0.92rem;
+        }
+
+        .offer-copy {
+            padding: 2rem;
+            border-radius: var(--radius-xl);
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(99, 107, 47, 0.1);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .offer-list {
+            display: grid;
+            gap: 1rem;
+            margin: 1.6rem 0 0;
+        }
+
+        .offer-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            padding: 1rem 1.1rem;
+            border-radius: var(--radius-md);
+            background: rgba(250, 249, 246, 0.92);
+        }
+
+        .offer-item-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: rgba(99, 107, 47, 0.12);
+            color: var(--secondary);
+            font-weight: 800;
+        }
+
+        .offer-item strong {
+            display: block;
+            margin-bottom: 0.35rem;
+            color: var(--text-dark);
+            font-size: 1rem;
+        }
+
+        .steps-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .step-card {
+            position: relative;
+            padding-top: 4.6rem;
+        }
+
+        .step-number {
+            position: absolute;
+            top: 1.35rem;
+            left: 1.35rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            line-height: 1;
+            color: var(--accent);
+        }
+
+        .step-card strong {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        .values-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .value-card {
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 244, 236, 0.78));
+        }
+
+        .faq-panel {
+            padding: 2rem;
+        }
+
+        .faq-list {
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        details {
+            border-radius: var(--radius-md);
+            background: rgba(250, 249, 246, 0.94);
+            border: 1px solid rgba(99, 107, 47, 0.08);
+            overflow: hidden;
+        }
+
+        summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.15rem 1.2rem;
+            cursor: pointer;
+            list-style: none;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details p {
+            margin: 0;
+            padding: 0 1.2rem 1.2rem;
+            color: var(--text-medium);
+            line-height: 1.75;
+        }
+
+        .contact-panel {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
+            gap: 2rem;
+            padding: 2rem;
+            background:
+                radial-gradient(circle at top right, rgba(203, 153, 126, 0.16), transparent 24%),
+                linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(247, 244, 237, 0.86));
+        }
+
+        .contact-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            padding: 0.55rem 0.9rem;
+            border-radius: 999px;
+            background: rgba(135, 43, 47, 0.1);
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .contact-status::before {
+            content: '';
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .contact-aside {
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            background: rgba(255, 255, 255, 0.84);
+            border: 1px solid rgba(99, 107, 47, 0.1);
+        }
+
+        .contact-aside strong {
+            display: block;
+            margin-bottom: 0.75rem;
+            color: var(--secondary);
+        }
+
+        .contact-aside p {
+            margin: 0;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        .contact-checklist {
+            list-style: none;
+            margin: 1.2rem 0 0;
+            padding: 0;
+            display: grid;
+            gap: 0.7rem;
+        }
+
+        .contact-checklist li {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.8rem;
+            align-items: start;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        .contact-checklist li::before {
+            content: '01';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: rgba(99, 107, 47, 0.12);
+            color: var(--secondary);
+            font-size: 0.8rem;
+            font-weight: 800;
+        }
+
+        .contact-checklist li:nth-child(2)::before {
+            content: '02';
+        }
+
+        .contact-checklist li:nth-child(3)::before {
+            content: '03';
+        }
+
+        .contact-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.4rem;
+        }
+
+        .meta-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.65rem 0.95rem;
+            border-radius: 999px;
+            background: rgba(99, 107, 47, 0.08);
+            color: var(--secondary);
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .site-footer {
+            padding: 2rem 0 3rem;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(99, 107, 47, 0.1);
+        }
+
+        .footer-copy {
+            color: var(--text-soft);
+            font-size: 0.92rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover,
+        .footer-links a:focus-visible {
+            color: var(--secondary);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 600ms ease, transform 600ms ease;
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 1024px) {
+            .hero-grid,
+            .story-layout,
+            .offer-layout,
+            .contact-panel,
+            .terrain-grid,
+            .steps-grid,
+            .values-grid,
+            .trust-strip {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                min-height: 540px;
+            }
+
+            .note-card,
+            .trust-item {
+                min-height: auto;
+            }
+
+            .hero-note {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 860px) {
+            .nav-toggle {
+                display: inline-flex;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .main-nav {
+                position: fixed;
+                inset: 84px 1rem auto;
+                padding: 1rem;
+                border-radius: 24px;
+                background: rgba(250, 249, 246, 0.98);
+                border: 1px solid rgba(99, 107, 47, 0.1);
+                box-shadow: 0 24px 50px rgba(38, 48, 40, 0.12);
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-8px);
+                transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
+            }
+
+            .main-nav.is-open {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.2rem;
+            }
+
+            .main-nav a {
+                display: block;
+                padding: 0.95rem 1rem;
+                border-radius: 16px;
+            }
+
+            .main-nav a:hover,
+            .main-nav a:focus-visible,
+            .main-nav a.is-active {
+                background: rgba(99, 107, 47, 0.08);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding-top: 3.2rem;
+            }
+
+            .hero h1 {
+                max-width: none;
+            }
+
+            .hero-visual {
+                min-height: 480px;
+            }
+
+            .art-column,
+            .story-panel,
+            .story-aside,
+            .quote-block,
+            .offer-panel,
+            .offer-copy,
+            .faq-panel,
+            .contact-panel {
+                padding: 1.4rem;
+            }
+
+            .section-intro h2 {
+                font-size: 2.5rem;
+            }
+
+            .footer-links {
+                gap: 0.75rem 1rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+                    <span class="brand-mark">Capucine Desprez</span>
+                    <span class="brand-tag">Coaching à la matrescence</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Ouvrir le menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        <path d="M4 7h16"></path>
+                        <path d="M4 12h16"></path>
+                        <path d="M4 17h16"></path>
+                    </svg>
+                </button>
+                <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#qui-suis-je">À propos</a></li>
+                        <li><a href="#coaching-mamans">Coaching pour mamans</a></li>
+                    </ul>
+                </nav>
+                <a class="header-cta" href="#contact">Me contacter</a>
+            </div>
+        </header>
+
+        <main id="contenu">
+            <section class="hero" id="accueil">
+                <div class="container hero-grid">
+                    <div class="hero-copy reveal">
+                        <p class="eyebrow">Coaching certifié ICF</p>
+                        <h1>J'accompagne les mamans <span>à se (re)connecter à leur identité profonde</span></h1>
+                        <p class="hero-lead">J'accompagne les mamans qui vivent une perte de repères après l'arrivée d'un enfant à se (re)connecter à leur identité profonde et à créer une maternité qui leur correspond grâce au coaching certifié ICF.</p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#coaching-mamans">Découvrir l'accompagnement</a>
+                            <a class="button button-secondary" href="#qui-suis-je">Qui suis-je ?</a>
+                        </div>
+                        <div class="hero-note" aria-label="Points cles de l'accompagnement">
+                            <article class="note-card">
+                                <strong>Perte de repères</strong>
+                                <p>Un espace pour traverser les bouleversements psychiques, émotionnels et identitaires liés à l'arrivée d'un enfant.</p>
+                            </article>
+                            <article class="note-card">
+                                <strong>Coaching certifié ICF</strong>
+                                <p>Un accompagnement structuré, sensible et professionnel pour retrouver un axe plus juste.</p>
+                            </article>
+                            <article class="note-card">
+                                <strong>Maternité qui vous correspond</strong>
+                                <p>Créer une manière d'être mère qui respecte aussi la femme que vous êtes et aspirez à être.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal">
+                        <div class="hero-art">
+                            <div class="art-frame">
+                                <div class="art-column">
+                                    <div class="art-pill">Accompagnement à la matrescence</div>
+                                    <div class="art-copy">
+                                        <p>Accueillir la mère, <span>honorer la femme.</span></p>
+                                    </div>
+                                    <div class="art-cards">
+                                        <article class="floating-card">
+                                            <strong>Ce que vous traversez</strong>
+                                            <p>Charge mentale, fatigue émotionnelle, perte de confiance, solitude, culpabilité, besoin de repères.</p>
+                                        </article>
+                                        <article class="floating-card">
+                                            <strong>Ce que l'on vient construire</strong>
+                                            <p>Une maternité alignée avec qui vous êtes aujourd'hui, dans votre réalité quotidienne.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="trust-band">
+                <div class="container reveal">
+                    <div class="trust-strip">
+                        <article class="trust-item">
+                            <strong>Spécialisation</strong>
+                            <p>Accompagnement à la matrescence et aux transformations identitaires provoquées par l'arrivée d'un bébé.</p>
+                        </article>
+                        <article class="trust-item">
+                            <strong>Expérience</strong>
+                            <p>Plus de 6 ans d'expertise autour du bien-être émotionnel et identitaire.</p>
+                        </article>
+                        <article class="trust-item">
+                            <strong>Approche</strong>
+                            <p>Coaching, communication non-violente, intelligence émotionnelle et écoute active.</p>
+                        </article>
+                        <article class="trust-item">
+                            <strong>Format</strong>
+                            <p>Coaching individuel 100 % en ligne, pensé pour s'intégrer à votre quotidien de maman.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <section id="qui-suis-je">
+                <div class="container">
+                    <div class="section-intro reveal">
+                        <p class="section-kicker">À propos</p>
+                        <h2>Qui suis-je ?</h2>
+                        <p>Je suis Capucine Desprez, coach certifiée ICF, spécialisée en accompagnement à la matrescence.</p>
+                    </div>
+
+                    <div class="story-layout">
+                        <article class="story-panel reveal">
+                            <p>J'accompagne les mamans à vivre les modifications psychiques, émotionnelles et identitaires que provoquent l'arrivée d'un bébé.</p>
+                            <p>Pendant plus de 6 ans, j'ai développé mon expertise sur le bien-être émotionnel et identitaire à travers le coaching, la communication non-violente, l'intelligence émotionnelle et l'écoute active.</p>
+                            <p>Mon expérience personnelle nourrit ma pratique quotidiennement. C'est parce que j'ai eu besoin d'aide pour répondre à ces deux questions que je me posais en tant que nouvelle maman que je suis spécialisée en accompagnement à la matrescence depuis 2024.</p>
+                        </article>
+
+                        <div class="reveal" style="display: grid; gap: 1.25rem;">
+                            <aside class="story-aside">
+                                <h3>Les questions fondatrices</h3>
+                                <ul class="list-clean">
+                                    <li>Quelle femme suis-je désormais / j'aspire à être ?</li>
+                                    <li>Quelle maman suis-je / j'aspire à être ?</li>
+                                    <li>Comment faire de la place à ces réponses dans un quotidien déjà dense ?</li>
+                                </ul>
+                            </aside>
+                            <div class="quote-block">
+                                <p>« Accueillir la mère, honorer la femme »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="coaching-mamans" aria-labelledby="coaching-title">
+                <div class="container">
+                    <div class="section-intro reveal">
+                        <p class="section-kicker">Coaching pour mamans</p>
+                        <h2 id="coaching-title">Accompagnement à la matrescence</h2>
+                        <p>Un accompagnement pensé pour les mamans qui souhaitent retrouver de la clarté, de la confiance et une maternité qui leur correspond.</p>
+                    </div>
+
+                    <div class="section-intro reveal" style="margin-top: 0; margin-bottom: 1.8rem;">
+                        <p class="section-kicker">En savoir plus</p>
+                        <h2 style="font-size: clamp(2rem, 4vw, 3rem);">Les problèmes que tu rencontres</h2>
+                    </div>
+                    <div class="terrain-grid">
+                        <article class="terrain-card reveal">
+                            <strong>Épuisement émotionnel</strong>
+                            <p>Tu es épuisée émotionnellement et tu as l'impression de devoir continuer malgré tout.</p>
+                        </article>
+                        <article class="terrain-card reveal">
+                            <strong>Charge mentale et culpabilité</strong>
+                            <p>Tu croules sous le poids de la charge mentale et tu culpabilises constamment de ne pas réussir à être et faire tout ce qu'on attend de toi.</p>
+                        </article>
+                        <article class="terrain-card reveal">
+                            <strong>Confiance et solitude</strong>
+                            <p>Tu as une perte de confiance en toi, tu te déçois souvent, tu te sens seule et tu ne veux pas reproduire les schémas d'éducation d'hier.</p>
+                        </article>
+                    </div>
+
+                    <div class="section-intro reveal" style="margin-top: 4rem; margin-bottom: 1.8rem;">
+                        <p class="section-kicker">Ce que tu veux vraiment</p>
+                        <h2 style="font-size: clamp(2rem, 4vw, 3rem);">Retrouver un équilibre plus juste</h2>
+                        <p>Les séances servent à remettre du mouvement, du discernement et de la respiration dans une période de grande transformation.</p>
+                    </div>
+
+                    <div class="values-grid">
+                        <article class="value-card reveal">
+                            <strong>Respirer à nouveau</strong>
+                            <p>Partager la charge pour te sentir plus légère et respirer à nouveau.</p>
+                        </article>
+                        <article class="value-card reveal">
+                            <strong>Retrouver ton énergie</strong>
+                            <p>Retrouver ton énergie émotionnelle et psychique, ainsi qu'une vie alignée avec qui tu es aujourd'hui.</p>
+                        </article>
+                        <article class="value-card reveal">
+                            <strong>Avancer avec confiance</strong>
+                            <p>Retrouver confiance en toi, consolider ton estime de toi et te libérer du poids qui t'empêche d'avancer.</p>
+                        </article>
+                    </div>
+
+                    <div class="section-intro reveal" style="margin-top: 4rem; margin-bottom: 1.8rem;">
+                        <p class="section-kicker">Le déroulement d'une séance</p>
+                        <h2 style="font-size: clamp(2rem, 4vw, 3rem);">Un cheminement en quatre étapes</h2>
+                        <p>Chaque séance aide à clarifier la situation, les besoins et les actions possibles en tenant compte de ton quotidien.</p>
+                    </div>
+
+                    <div class="steps-grid">
+                        <article class="step-card reveal">
+                            <span class="step-number">a</span>
+                            <strong>Identifier les enjeux de la situation et les besoins</strong>
+                            <p>Quelle est la situation ? L'environnement, les problèmes, les enjeux, les priorités, les besoins.</p>
+                        </article>
+                        <article class="step-card reveal">
+                            <span class="step-number">b</span>
+                            <strong>Clarifier tes objectifs</strong>
+                            <p>Élaborer une vision de toi-même à court et long terme et formuler tes aspirations et attentes.</p>
+                        </article>
+                        <article class="step-card reveal">
+                            <span class="step-number">c</span>
+                            <strong>Explorer ton monde intérieur</strong>
+                            <p>Identifier tes valeurs, qualités, compétences mais aussi tes freins, tes blocages, ce qui te retient et t'empêche d'avancer.</p>
+                        </article>
+                        <article class="step-card reveal">
+                            <span class="step-number">d</span>
+                            <strong>Mettre en place des actions</strong>
+                            <p>Des actions concrètes et personnalisées en fonction de ton quotidien.</p>
+                        </article>
+                    </div>
+
+                    <div class="section-intro reveal" style="margin-top: 4rem;">
+                        <p class="section-kicker">Les tarifs</p>
+                        <h2>Accompagnement de 3 mois</h2>
+                        <p>Une offre claire, unique et lisible, pensée pour accompagner un vrai processus de transformation dans le temps.</p>
+                    </div>
+
+                    <div class="offer-layout">
+                        <article class="offer-panel reveal">
+                            <div>
+                                <p class="section-kicker" style="margin-bottom: 0.5rem;">Les tarifs</p>
+                                <h3>Accompagnement de 3 mois</h3>
+                                <p>Un accompagnement structuré pour prendre le temps de clarifier, d'explorer et de mettre en place des actions adaptées à ton quotidien.</p>
+                            </div>
+                            <div class="offer-price">
+                                <span>Tarif</span>
+                                <strong>500€</strong>
+                                <p class="offer-note">3 sessions dans l'année : janvier à mars, mai à juillet, septembre à novembre.</p>
+                            </div>
+                        </article>
+
+                        <article class="offer-copy reveal">
+                            <h3>Ce que comprend l'accompagnement</h3>
+                            <p>Un format simple et complet pour poser un cadre stable, avancer dans le temps et soutenir le travail entre les séances.</p>
+                            <div class="offer-list">
+                                <div class="offer-item">
+                                    <span class="offer-item-number">1</span>
+                                    <div>
+                                        <strong>6 séances de coaching individuel d'1h</strong>
+                                        <p>Toutes les deux semaines pour laisser de la place à l'intégration.</p>
+                                    </div>
+                                </div>
+                                <div class="offer-item">
+                                    <span class="offer-item-number">2</span>
+                                    <div>
+                                        <strong>1 séance découverte et 1 séance bilan</strong>
+                                        <p>Pour cadrer le départ puis faire le point sur le chemin parcouru.</p>
+                                    </div>
+                                </div>
+                                <div class="offer-item">
+                                    <span class="offer-item-number">3</span>
+                                    <div>
+                                        <strong>100 % en ligne</strong>
+                                        <p>Un format souple et accessible, adapté au quotidien des mamans.</p>
+                                    </div>
+                                </div>
+                                <div class="offer-item">
+                                    <span class="offer-item-number">4</span>
+                                    <div>
+                                        <strong>Activités d'introspection entre chaque séance</strong>
+                                        <p>Pour prolonger le travail de façon concrète entre les rendez-vous.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <div class="contact-panel reveal">
+                        <div class="contact-copy">
+                            <p class="section-kicker">Contact</p>
+                            <h2>Contact</h2>
+                            <p>Les informations de contact définitives seront ajoutées dès validation par la cliente. La structure est prête pour intégrer l'email, le téléphone et le lien Instagram sans modifier le reste du site.</p>
+                            <div class="contact-status">Coordonnées en cours de validation</div>
+                            <div class="contact-meta" aria-label="Informations de contact a venir">
+                                <span class="meta-chip">Email à confirmer</span>
+                                <span class="meta-chip">Téléphone à confirmer</span>
+                                <span class="meta-chip">Instagram à connecter</span>
+                            </div>
+                        </div>
+
+                        <aside class="contact-aside">
+                            <strong>Section prête pour la mise en ligne</strong>
+                            <p>Une fois les données confirmées, cette section pourra accueillir un canal de contact principal clair et un lien Instagram unique, conformément à la demande de la cliente.</p>
+                            <ul class="contact-checklist">
+                                <li>Afficher l'email professionnel et, si souhaité, le téléphone.</li>
+                                <li>Ajouter le lien vers Instagram comme seul réseau social.</li>
+                                <li>Conserver une prise de contact simple, sobre et cohérente avec le site brochure.</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p class="footer-copy">© <span id="currentYear">2026</span> Capucine Desprez. Site brochure statique.</p>
+                <nav class="footer-links" aria-label="Liens de pied de page">
+                    <a href="mentions-legales.html">Mentions legales</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialite</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const mainNav = document.getElementById('mainNav');
+        const navLinks = Array.from(mainNav.querySelectorAll('a'));
+        const yearTarget = document.getElementById('currentYear');
+        const revealElements = document.querySelectorAll('.reveal');
+        const sectionLinks = navLinks.filter((link) => link.getAttribute('href').startsWith('#'));
+
+        if (yearTarget) {
+            yearTarget.textContent = new Date().getFullYear();
+        }
+
+        const closeMenu = () => {
+            mainNav.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        };
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = mainNav.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+            document.body.classList.toggle('menu-open', isOpen);
+        });
+
+        sectionLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 860) {
+                    closeMenu();
+                }
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mainNav.classList.contains('is-open')) {
+                return;
+            }
+
+            if (!mainNav.contains(event.target) && !navToggle.contains(event.target)) {
+                closeMenu();
+            }
+        });
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.16
+        });
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+
+        const sections = sectionLinks
+            .map((link) => {
+                const target = document.querySelector(link.getAttribute('href'));
+                return target ? { link, target } : null;
+            })
+            .filter(Boolean);
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const section = sections.find((item) => item.target === entry.target);
+
+                if (!section || !entry.isIntersecting) {
+                    return;
+                }
+
+                sectionLinks.forEach((link) => link.classList.remove('is-active'));
+                section.link.classList.add('is-active');
+            });
+        }, {
+            rootMargin: '-35% 0px -45% 0px',
+            threshold: 0
+        });
+
+        sections.forEach((section) => sectionObserver.observe(section.target));
+    </script>
+</body>
+</html>
