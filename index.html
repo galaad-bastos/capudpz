@@ -333,7 +333,7 @@
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 1rem;
-            margin-top: 2.4rem;
+            margin-top: 1.6rem;
         }
 
         .note-card {
@@ -390,12 +390,12 @@
             background: rgba(178, 172, 136, 0.24);
         }
 
-        .hero-art::after {
+        /* .hero-art::after {
             inset: 6% -6% auto auto;
             width: 200px;
             height: 200px;
             background: rgba(203, 153, 126, 0.2);
-        }
+        } */
 
         .art-frame {
             position: relative;
@@ -432,6 +432,7 @@
         .art-copy {
             align-self: center;
             max-width: 26rem;
+            transform: translateY(-1.5rem);
         }
 
         .art-copy p {
@@ -1193,20 +1194,6 @@
                             <a class="button button-primary" href="#coaching-mamans">Découvrir l'accompagnement</a>
                             <a class="button button-secondary" href="#qui-suis-je">Qui suis-je ?</a>
                         </div>
-                        <div class="hero-note" aria-label="Points cles de l'accompagnement">
-                            <article class="note-card">
-                                <strong>Perte de repères</strong>
-                                <p>Un espace pour traverser les bouleversements psychiques, émotionnels et identitaires liés à l'arrivée d'un enfant.</p>
-                            </article>
-                            <article class="note-card">
-                                <strong>Coaching certifié ICF</strong>
-                                <p>Un accompagnement structuré, sensible et professionnel pour retrouver un axe plus juste.</p>
-                            </article>
-                            <article class="note-card">
-                                <strong>Maternité qui vous correspond</strong>
-                                <p>Créer une manière d'être mère qui respecte aussi la femme que vous êtes et aspirez à être.</p>
-                            </article>
-                        </div>
                     </div>
 
                     <div class="hero-visual reveal">
@@ -1231,6 +1218,21 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="container hero-note reveal" aria-label="Points cles de l'accompagnement">
+                    <article class="note-card">
+                        <strong>Perte de repères</strong>
+                        <p>Un espace pour traverser les bouleversements psychiques, émotionnels et identitaires liés à l'arrivée d'un enfant.</p>
+                    </article>
+                    <article class="note-card">
+                        <strong>Coaching certifié ICF</strong>
+                        <p>Un accompagnement structuré, sensible et professionnel pour retrouver un axe plus juste.</p>
+                    </article>
+                    <article class="note-card">
+                        <strong>Maternité qui vous correspond</strong>
+                        <p>Créer une manière d'être mère qui respecte aussi la femme que vous êtes et aspirez à être.</p>
+                    </article>
                 </div>
             </section>
 
