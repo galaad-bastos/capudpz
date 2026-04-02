@@ -1039,12 +1039,25 @@
         }
 
         @media (max-width: 860px) {
+            .header-inner {
+                gap: 0.7rem;
+            }
+
+            .brand-tag {
+                display: none;
+            }
+
             .nav-toggle {
                 display: inline-flex;
             }
 
             .header-cta {
-                display: none;
+                display: inline-flex;
+                min-height: 42px;
+                padding: 0 0.9rem;
+                font-size: 0.82rem;
+                white-space: nowrap;
+                box-shadow: none;
             }
 
             .main-nav {
@@ -1087,6 +1100,10 @@
         }
 
         @media (max-width: 640px) {
+            .brand-mark {
+                font-size: 1.6rem;
+            }
+
             .hero {
                 padding-top: 3.2rem;
             }
