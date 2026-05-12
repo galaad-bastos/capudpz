@@ -549,6 +549,32 @@
             letter-spacing: -0.04em;
         }
 
+        .section-intro--coaching .section-subhead,
+        .section-intro--coaching .section-subhead.section-subhead {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            line-height: 1;
+            letter-spacing: -0.04em;
+            font-weight: 600;
+            margin-top: 0.35rem;
+            color: var(--text-dark);
+        }
+
+        .section-intro--coaching .section-emphasis,
+        .section-intro--coaching .section-emphasis.section-emphasis {
+            margin: 2rem 0 0;
+            max-width: 58rem;
+            padding: 2rem 2.1rem;
+            border-radius: calc(var(--radius-lg) + 6px);
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(99, 107, 47, 0.16);
+            box-shadow: 0 24px 70px rgba(38, 48, 40, 0.09);
+            color: var(--secondary);
+            line-height: 2;
+            font-size: clamp(1.1rem, 1.2vw, 1.3rem);
+            font-weight: 600;
+        }
+
         .section-intro p {
             margin: 1rem 0 0;
             color: var(--text-medium);
@@ -1325,10 +1351,10 @@
 
             <section id="coaching-mamans" aria-labelledby="coaching-title">
                 <div class="container">
-                    <div class="section-intro reveal">
+                    <div class="section-intro reveal section-intro--coaching">
                         <p class="section-kicker">Coaching pour mamans</p>
-                        <h2 id="coaching-title">Accompagnement à la matrescence</h2>
-                        <p>Un accompagnement pensé pour les mamans qui souhaitent retrouver de la clarté, de la confiance et une maternité qui leur correspond.</p>
+                        <h2 id="coaching-title" class="section-subhead">Accompagnement à la matrescence</h2>
+                        <p class="section-emphasis">Un accompagnement pensé pour les mamans qui souhaitent retrouver de la clarté, de la confiance et une maternité qui leur correspond.</p>
                     </div>
 
                     <div class="section-intro reveal" style="margin-top: 0; margin-bottom: 1.8rem;">
